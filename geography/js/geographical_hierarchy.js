@@ -1,4 +1,4 @@
-window.geographical_hierarchy = 
+window.geoHierarchy = 
   { 'continents': [ { 'continent_name': 'North America',
                       'country_ids': ['11', '12', '13']
                     },
