@@ -12,32 +12,26 @@
   <table>
     <tr>
       <td class="darkbg">
-        <img src="images/dark.png">
+        <img ng-src="images/{{ trafficLightState === 'red' ? 'red' : 'dark' }}.png">
       </td>
       <td>
-        <form>
-          <button>Make it red</button>
-        </form>
+        <!--<form ng-submit="advance()">
+          <button>Advance</button>
+        </form>-->
       </td>
     </tr>
     <tr>
       <td class="darkbg">
-        <img src="images/dark.png">
+          <img ng-src="images/{{ trafficLightState === 'amber' ? 'amber' : 'dark' }}.png">
       </td>
       <td>
-        <form>
-          <button>Make it amber</button>
-        </form>
       </td>
     </tr>
     <tr>
       <td class="darkbg">
-        <img src="images/dark.png">
+          <img ng-src="images/{{ trafficLightState === 'green' ? 'green' : 'dark' }}.png">
       </td>
       <td>
-        <form>
-          <button>Make it green</button>
-        </form>
       </td>
     </tr>
   </table>
@@ -49,4 +43,3 @@
   </div>
 </body>
 </html>
-
